@@ -24,20 +24,23 @@ composer require ufukdogan92/compare
 
 ```php
 <?php
-
+use Compare\Object\Gte;
+use Compare\Object\Lte;
 use Compare\Validation;
+
+$validator = new Validation();
 
 $number1 = 100.00;
 $number2 = 200.12;
 
 echo '### Greater Than Equal';
 echo '<br/>';
-echo $validator->compare($number1, $number2, new \Compare\Object\Gte()) ? 'true' : 'false';
+echo $validator->compare($number1, $number2, new Gte()) ? 'true' : 'false';
 echo '<br/><br/>';
 
 echo '### Less Than Equal';
 echo '<br/>';
-echo $validator->compare($number1, $number2, new \Compare\Object\Lte()) ? 'true' : 'false';
+echo $validator->compare($number1, $number2, new Lte()) ? 'true' : 'false';
 
 
 

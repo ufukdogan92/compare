@@ -8,6 +8,8 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
+use Compare\Object\Gte;
+use Compare\Object\Lte;
 use Compare\Validation;
 
 $data = json_decode('{
@@ -118,13 +120,13 @@ echo '<br/><br/>';
 
 echo '### Greater Than Equal';
 echo '<br/>';
-echo $validator->compare($number1, $number2, new \Compare\Object\Gte()) ? 'true' : 'false';
+echo $validator->compare($number1, $number2, new Gte()) ? 'true' : 'false';
 echo '<br/><br/>';
 
 
 echo '### Less Than Equal';
 echo '<br/>';
-echo $validator->compare($number1, $number2, new \Compare\Object\Lte()) ? 'true' : 'false';
+echo $validator->compare($number1, $number2, new Lte()) ? 'true' : 'false';
 
 
 
