@@ -1,0 +1,19 @@
+{
+    "name": "ufukdogan92/compare",
+    "description": "Php Compare Helper",
+    "authors": [
+        {
+            "name": "Ufuk Dogan",
+            "email": "ufukdogan92@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "justinrainbow/json-schema": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Compare\\": "src/"
+        }
+    }
+}
